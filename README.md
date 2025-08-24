@@ -34,15 +34,23 @@ This project provides a web-based tool for surface soil moisture prediction usin
    Follow the browser flow (sign in, paste the token). In code, the app will call ee.Initialize().
    Docs: Intro to the Python API — https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api
    
-4. **Launch the Web Application**  
+3. **Launch the Web Application**  
 
    ```bash
    streamlit run sm_eeapps.py
    ```
 
-3. **Make Predictions**  
-   In the Streamlit app:
-   - Click any point on the map **or** manually enter longitude and latitude within the continent.
-   - Choose a start and end date, then click **"Check Available Dates"**.
-   - From the returned list, select a valid date and click **"Run Prediction"**.
-   - The tool will perform soil moisture prediction for the selected location and date using the trained ensemble models.
+4. **Make Predictions**  
+   In the Streamlit app:  
+   - Click any point on the map **or** manually enter longitude and latitude within the continent.  
+   - Choose a start and end date, then click **"Check Available Dates"**.  
+     
+     ![Web Interface](./images/GSSM_web.png)  
+
+   - From the returned list, select a valid date and click **"Run Prediction"**.  
+     
+     ![Run Prediction](./images/GSSM_web1.png)  
+
+   - The tool will perform soil moisture prediction for the selected location and date using the trained ensemble models.  
+
+   - The predicted soil moisture will be displayed as a **new layer** on the map. You can also click **"Download Prediction Map (GEOTIFF)"** to export the results to your Google Drive. 
