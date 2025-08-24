@@ -31,8 +31,10 @@ This project provides a web-based tool for surface soil moisture prediction usin
    pip install earthengine-api
    earthengine authenticate
    ```
+   Follow the browser flow (sign in, paste the token). In code, the app will call ee.Initialize().
+   Docs: Intro to the Python API — https://developers.google.com/earth-engine/tutorials/community/intro-to-python-api
    
-3. **Launch the Web Application**  
+4. **Launch the Web Application**  
 
    ```bash
    streamlit run sm_eeapps.py
